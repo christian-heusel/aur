@@ -1,0 +1,15 @@
+pkgbase = fswebcam
+	pkgdesc = Neat and simple webcam app
+	pkgver = 20200725
+	pkgrel = 1
+	url = https://www.sanslogic.co.uk/fswebcam/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = gd
+	backup = etc/fswebcam.conf
+	source = https://www.sanslogic.co.uk/fswebcam//files/fswebcam-20200725.tar.gz
+	sha256sums = 319a6926507cb52da5043a5ceaea6cc5b949d3acaa5f39fe074327ae58d65fb5
+
+pkgname = fswebcam
+
