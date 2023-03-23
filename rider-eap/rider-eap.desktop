@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Rider EAP
+Version=1.0
+Type=Application
+Exec="/usr/share/rider-eap/bin/rider.sh" %f
+Icon=/usr/share/rider-eap/bin/rider.png
+Comment=A cross-platform C# IDE by JetBrains.
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=true
+StartupWMClass=jetbrains-rider
