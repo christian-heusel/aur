@@ -1,0 +1,20 @@
+pkgbase = nsxiv
+	pkgdesc = Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
+	pkgver = 30
+	pkgrel = 2
+	url = https://codeberg.org/nsxiv/nsxiv
+	arch = x86_64
+	license = GPL2
+	depends = imlib2
+	depends = desktop-file-utils
+	depends = xdg-utils
+	depends = hicolor-icon-theme
+	depends = libexif
+	depends = libxft
+	depends = giflib
+	depends = libwebp
+	conflicts = nsxiv-git
+	source = nsxiv-30.tar.gz::https://codeberg.org/nsxiv/nsxiv/archive/v30.tar.gz
+	sha256sums = a916d1385872ccf0b55fbf6b8546d05fcbbbb8b0a92579494e64c6bd22fc7941
+
+pkgname = nsxiv
