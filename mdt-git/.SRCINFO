@@ -1,0 +1,14 @@
+pkgbase = mdt-git
+	pkgdesc = Commandline markdown todo list manager
+	pkgver = r36.36bbc05
+	pkgrel = 1
+	url = https://github.com/basilioss/mdt
+	arch = any
+	license = GPL3
+	depends = gum
+	provides = mdt
+	conflicts = mdt
+	source = mdt::git+https://github.com/basilioss/mdt.git
+	sha256sums = SKIP
+
+pkgname = mdt-git
