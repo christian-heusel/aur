@@ -22,6 +22,10 @@ build() {
     go build -ldflags "-linkmode=external -X github.com/kopia/kopia/repo.BuildVersion=$pkgver-$pkgrel -X github.com/kopia/kopia/repo.BuildInfo=unofficial -X github.com/kopia/kopia/repo.BuildGitHubRepo=ARCH_USER_REPOSITORY"
 }
 
+check() {
+    make -C $pkgname-$pkgver test
+}
+
 package() {
     install -Dm755 "$pkgname-$pkgver/kopia" "$pkgdir/usr/bin/kopia"
 }
