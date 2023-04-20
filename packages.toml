@@ -1,0 +1,82 @@
+[__config__]
+oldver = "old.txt"
+newver = "new.txt"
+keyfile = "apikeys.ini"
+
+[ansible-gopass]
+source = "github"
+github = "christian-heusel/ansible-lookup-plugin-gopass"
+prefix = "v"
+use_max_tag = true
+
+[flemozi]
+source = "github"
+github = "KRTirtho/flemozi"
+prefix = "v"
+use_max_tag = true
+
+[fswebcam]
+source = "github"
+github = "fsphil/fswebcam"
+use_max_tag = true
+
+[google-chrome]
+source = "apt"
+mirror = "https://dl.google.com/linux/chrome/deb/"
+pkg = "google-chrome-stable"
+suite = "stable"
+repo = "main"
+strip_release = true
+
+[google-chrome-beta]
+source = "apt"
+mirror = "https://dl.google.com/linux/chrome/deb/"
+pkg = "google-chrome-beta"
+suite = "stable"
+repo = "main"
+strip_release = true
+
+[google-chrome-dev]
+source = "apt"
+mirror = "https://dl.google.com/linux/chrome/deb/"
+pkg = "google-chrome-unstable"
+suite = "stable"
+repo = "main"
+strip_release = true
+
+[kopia]
+source = "github"
+github = "kopia/kopia"
+use_max_tag = true
+exclude_regex = ".*(rc).*"
+
+[mdt]
+source = "github"
+github = "basilioss/mdt"
+use_max_tag = true
+
+[molly-guard]
+source = "debianpkg"
+debianpkg = "molly-guard"
+strip_release = true
+
+[nsiv]
+source = "git"
+git = "https://codeberg.org/nsxiv/nsxiv.git"
+use_max_tag = true
+
+[prometheus-mosquitto-exporter]
+source = "github"
+github = "sapcc/mosquitto-exporter"
+use_max_tag = true
+
+[pawxel]
+source = "github"
+github = "yeahitsjan/pawxel"
+use_max_tag = true
+
+[teleport]
+source = "github"
+github = "gravitational/teleport"
+use_latest_release = true
+exclude_regex = ".*(rc|r|alpha|beta).*"
