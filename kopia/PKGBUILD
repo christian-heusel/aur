@@ -9,6 +9,7 @@ arch=('x86_64')
 url='https://kopia.io'
 license=('APACHE')
 makedepends=('go')
+optdepends=('fuse3: needed for kopia mount')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/kopia/kopia/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('017fe4375207ce2ed73433b072249882735de1a8a5aedebec2ca1c6fee9e5a9b')
 
