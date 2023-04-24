@@ -1,6 +1,6 @@
-/*
-
-!/.gitignore
-!/**/PKGBUILD
-!/**/.SRCINFO
-!/**/*.install
+**/*.tar*
+**/*.deb
+**/*~
+**/src
+**/pkg
+apikeys.ini
