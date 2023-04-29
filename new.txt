@@ -11,5 +11,5 @@
   "nsiv": "v31",
   "pawxel": "0.1.3",
   "prometheus-mosquitto-exporter": "v0.8.0",
-  "teleport": "v12.2.4"
+  "teleport": "v12.2.5"
 }
