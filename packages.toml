@@ -80,3 +80,8 @@ source = "github"
 github = "gravitational/teleport"
 use_latest_release = true
 exclude_regex = ".*(rc|r|alpha|beta).*"
+
+[pdfcpu]
+source = "github"
+github = "pdfcpu/pdfcpu"
+use_latest_release = true
