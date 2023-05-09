@@ -12,5 +12,5 @@
   "pawxel": "0.1.3",
   "pdfcpu": "v0.4.1",
   "prometheus-mosquitto-exporter": "v0.8.0",
-  "teleport": "v12.3.2"
+  "teleport": "v13.0.0"
 }
