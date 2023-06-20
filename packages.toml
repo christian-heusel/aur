@@ -80,3 +80,11 @@ exclude_regex = ".*(rc|r|alpha|beta).*"
 source = "github"
 github = "pdfcpu/pdfcpu"
 use_latest_release = true
+
+[spotify]
+source = "apt"
+mirror = "http://repository.spotify.com/"
+pkg = "spotify-client"
+suite = "testing"
+repo = "non-free"
+# strip_release = true
