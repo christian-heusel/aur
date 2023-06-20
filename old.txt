@@ -12,5 +12,6 @@
   "pawxel": "0.1.3",
   "pdfcpu": "v0.4.1",
   "prometheus-mosquitto-exporter": "v0.8.0",
+  "spotify": "1:1.2.13.661.ga588f749",
   "teleport": "v13.1.1"
 }
