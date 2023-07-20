@@ -10,7 +10,7 @@
   "molly-guard": "0.7.2",
   "nsiv": "v31",
   "pawxel": "0.1.3",
-  "pdfcpu": "v0.4.1",
+  "pdfcpu": "v0.4.2",
   "prometheus-mosquitto-exporter": "v0.8.0",
   "spotify": "1:1.2.13.661.ga588f749",
   "teleport": "v13.2.3"
