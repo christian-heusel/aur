@@ -74,6 +74,7 @@ use_max_tag = true
 source = "github"
 github = "gravitational/teleport"
 use_latest_release = true
+prefix = "v"
 exclude_regex = ".*(rc|r|alpha|beta).*"
 
 [pdfcpu]
