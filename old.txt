@@ -4,7 +4,7 @@
   "fswebcam": "20200725",
   "google-chrome": "115.0.5790.170",
   "google-chrome-beta": "116.0.5845.62",
-  "google-chrome-dev": "117.0.5911.2",
+  "google-chrome-dev": "117.0.5927.0",
   "kopia": "v0.13.0",
   "mdt": "1.4.0",
   "molly-guard": "0.7.2",
