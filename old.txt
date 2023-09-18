@@ -5,7 +5,7 @@
   "google-chrome": "117.0.5938.88",
   "google-chrome-beta": "118.0.5993.11",
   "google-chrome-dev": "118.0.5993.11",
-  "kopia": "v0.13.0",
+  "kopia": "v0.14.1",
   "mdt": "1.4.0",
   "molly-guard": "0.7.2",
   "nsiv": "v31",
