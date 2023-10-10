@@ -2,7 +2,7 @@
   "ansible-gopass": "1.0.1",
   "flemozi": "0.2.0",
   "fswebcam": "20200725",
-  "google-chrome": "117.0.5938.149",
+  "google-chrome": "118.0.5993.70",
   "google-chrome-beta": "119.0.6045.10",
   "google-chrome-dev": "120.0.6051.2",
   "kopia": "v0.14.1",
