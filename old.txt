@@ -13,5 +13,5 @@
   "pdfcpu": "v0.5.0",
   "prometheus-mosquitto-exporter": "v0.8.0",
   "spotify": "1:1.2.22.982.g794acc0a",
-  "teleport": "14.0.3"
+  "teleport": "14.1.0"
 }
