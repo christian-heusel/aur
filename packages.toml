@@ -81,6 +81,7 @@ exclude_regex = ".*(rc|r|alpha|beta).*"
 source = "github"
 github = "pdfcpu/pdfcpu"
 use_latest_release = true
+prefix = "v"
 
 [spotify]
 source = "apt"
