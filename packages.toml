@@ -90,3 +90,9 @@ pkg = "spotify-client"
 suite = "testing"
 repo = "non-free"
 # strip_release = true
+
+[weechat-notify-send]
+source = "github"
+github = "s3rvac/weechat-notify-send"
+use_latest_release = true
+prefix = "v"
