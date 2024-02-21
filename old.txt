@@ -11,7 +11,7 @@
   "pawxel": "0.1.4",
   "pdfcpu": "0.6.0",
   "prometheus-mosquitto-exporter": "v0.8.0",
-  "spotify": "1:1.2.26.1187.g36b715a1",
+  "spotify": "1:1.2.31.1205.g4d59ad7c",
   "teleport": "15.0.2",
   "weechat-notify-send": "0.10"
 }
