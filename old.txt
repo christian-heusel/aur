@@ -9,7 +9,7 @@
   "mdt": "1.4.0",
   "molly-guard": "0.8.1",
   "pawxel": "0.1.4",
-  "pdfcpu": "0.6.0",
+  "pdfcpu": "0.7.0",
   "prometheus-mosquitto-exporter": "v0.8.0",
   "spotify": "1:1.2.31.1205.g4d59ad7c",
   "teleport": "15.1.1",
