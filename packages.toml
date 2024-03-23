@@ -49,6 +49,7 @@ source = "github"
 github = "kopia/kopia"
 use_max_tag = true
 exclude_regex = ".*(rc).*"
+prefix = "v"
 
 [mdt]
 source = "github"

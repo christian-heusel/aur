@@ -5,7 +5,7 @@
   "google-chrome": "123.0.6312.58",
   "google-chrome-beta": "124.0.6367.9",
   "google-chrome-dev": "125.0.6368.2",
-  "kopia": "v0.15.0",
+  "kopia": "0.16.0",
   "mdt": "1.4.0",
   "molly-guard": "0.8.1",
   "pawxel": "0.1.4",
