@@ -3,7 +3,7 @@
   "flemozi": "0.2.0",
   "fswebcam": "20200725",
   "google-chrome": "123.0.6312.86",
-  "google-chrome-beta": "124.0.6367.9",
+  "google-chrome-beta": "124.0.6367.18",
   "google-chrome-dev": "125.0.6368.2",
   "kopia": "0.16.1",
   "mdt": "1.4.0",
