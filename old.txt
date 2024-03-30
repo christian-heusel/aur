@@ -12,6 +12,6 @@
   "pdfcpu": "0.7.0",
   "prometheus-mosquitto-exporter": "v0.8.0",
   "spotify": "1:1.2.31.1205.g4d59ad7c",
-  "teleport": "15.1.10",
+  "teleport": "15.2.0",
   "weechat-notify-send": "0.10"
 }
