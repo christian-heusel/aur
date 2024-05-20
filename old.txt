@@ -17,7 +17,7 @@
       "version": "126.0.6478.7"
     },
     "google-chrome-dev": {
-      "version": "126.0.6468.2"
+      "version": "127.0.6485.0"
     },
     "kopia": {
       "version": "0.17.0"
@@ -40,7 +40,7 @@
       "version": "v0.8.0"
     },
     "spotify": {
-      "version": "1:1.2.31.1205.g4d59ad7c"
+      "version": "1:1.2.37.701.ge66eb7bc"
     },
     "teleport": {
       "version": "15.3.1",
