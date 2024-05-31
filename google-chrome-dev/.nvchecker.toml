@@ -1,0 +1,7 @@
+[google-chrome-dev]
+source = "apt"
+mirror = "https://dl.google.com/linux/chrome/deb/"
+pkg = "google-chrome-unstable"
+suite = "stable"
+repo = "main"
+strip_release = true
