@@ -1,11 +1,26 @@
 #!/bin/bash
 
-XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-~/.config}
-
-# Allow users to override command-line options
-if [[ -f $XDG_CONFIG_HOME/chrome-flags.conf ]]; then
-    CHROME_USER_FLAGS="$(grep -v '^#' $XDG_CONFIG_HOME/chrome-flags.conf)"
+if
+	test -z "${XDG_CONFIG_HOME}"
+then
+	XDG_CONFIG_HOME="${HOME}/.config"
 fi
 
-# Launch
-exec /opt/google/chrome/google-chrome $CHROME_USER_FLAGS "$@"
+CONF_FILE="${XDG_CONFIG_HOME}/chrome-flags.conf"
+
+if
+	test -f "${CONF_FILE}"
+then
+	mapfile -t CONF_LIST < "${CONF_FILE}"
+fi
+
+for CONF_LINE in "${CONF_LIST[@]}"
+do
+	if
+		! [[ "${CONF_LINE}" =~ ^[[:space:]]*(#|$) ]]
+	then
+		FLAG_LIST+=("${CONF_LINE}")
+	fi
+done
+
+exec /opt/google/chrome/google-chrome "${FLAG_LIST[@]}" "${@}"
