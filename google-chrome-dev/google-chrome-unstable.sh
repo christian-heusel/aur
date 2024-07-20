@@ -6,21 +6,21 @@ then
 	XDG_CONFIG_HOME="${HOME}/.config"
 fi
 
-CONF_FILE="${XDG_CONFIG_HOME}/chrome-unstable-flags.conf"
+CONFIG_FILE="${XDG_CONFIG_HOME}/chrome-unstable-flags.conf"
 
 if
-	test -f "${CONF_FILE}"
+	test -f "${CONFIG_FILE}"
 then
-	mapfile -t CONF_LIST < "${CONF_FILE}"
+	mapfile -t CONFIG_LIST < "${CONFIG_FILE}"
 fi
 
-for CONF_LINE in "${CONF_LIST[@]}"
+for CONFIG_LINE in "${CONFIG_LIST[@]}"
 do
 	if
-		! [[ "${CONF_LINE}" =~ ^[[:space:]]*(#|$) ]]
+		! [[ "${CONFIG_LINE}" =~ ^[[:space:]]*(#|$) ]]
 	then
-		FLAG_LIST+=("${CONF_LINE}")
+		OPTION_LIST+=("${CONFIG_LINE}")
 	fi
 done
 
-exec /opt/google/chrome-unstable/google-chrome-unstable "${FLAG_LIST[@]}" "${@}"
+exec /opt/google/chrome-unstable/google-chrome-unstable "${OPTION_LIST[@]}" "${@}"
