@@ -17,7 +17,7 @@ fi
 for CONFIG_LINE in "${CONFIG_LIST[@]}"
 do
 	if
-		! [[ "${CONFIG_LINE}" =~ ^[[:space:]]*(#|$) ]]
+		! [[ "${CONFIG_LINE}" =~ ^[[:space:]]*(\#|$) ]]
 	then
 		OPTION_LIST+=("${CONFIG_LINE}")
 	fi
