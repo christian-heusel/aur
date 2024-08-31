@@ -32,9 +32,9 @@
       "version": "0.1.4"
     },
     "pdfcpu": {
-      "version": "0.8.0",
-      "gitref": "refs/tags/v0.8.0",
-      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.8.0"
+      "version": "0.8.1",
+      "gitref": "refs/tags/v0.8.1",
+      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.8.1"
     },
     "prometheus-mosquitto-exporter": {
       "version": "v0.8.0"
