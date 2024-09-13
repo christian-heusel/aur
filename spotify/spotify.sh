@@ -9,5 +9,8 @@ if [[ -f "${XDG_CONFIG_HOME}/spotify-flags.conf" ]]; then
     echo "User flags:" "${SPOTIFY_USER_FLAGS[@]}"
 fi
 
+# Enable URI scheme usage in existing open instance.
+/usr/bin/dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.OpenUri string:"$@"
 # Launch Spotify with the given flags
-exec /opt/spotify/spotify "${SPOTIFY_USER_FLAGS[@]}" "$@"
+exec /opt/spotify/spotify "${SPOTIFY_USER_FLAGS[@]}" --uri=$@
+
