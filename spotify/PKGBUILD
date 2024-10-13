@@ -35,12 +35,12 @@ source=("${pkgname}-${pkgver}-${_commit}-x86_64.deb::http://repository.spotify.c
         "${pkgname}-${pkgver}-${pkgrel}-Release.sig::http://repository.spotify.com/dists/testing/Release.gpg"
         "${pkgname}-${pkgver}-${pkgrel}-x86_64-Packages::http://repository.spotify.com/dists/testing/non-free/binary-amd64/Packages")
 sha512sums=('81dd952e609ef59af780e15ec2b01968cad6b1de680e06f37afca9e195f0014dd02884abe12f0edc57073552da1088bb0c248548ba04717301f9c9c2997e76df'
-            'da48b628a4ea925dd8521133ebf364b261b11aed252d264dde6605d915cdb631919ffe672c58534bcdb60869e5d87a49a60a8198780b99517123f0031e83fdb1'
+            'daeb99a999cd1b89d7d78cd49891c46729a043c369053c3a3afcfdf0e771688b865b648817efc2ee83b22fac19dff0944e866f595146e244a46caff2b01de4a2'
             '999abe46766a4101e27477f5c9f69394a4bb5c097e2e048ec2c6cb93dfa1743eb436bde3768af6ba1b90eaac78ea8589d82e621f9cbe7d9ab3f41acee6e8ca20'
             '2e16f7c7b09e9ecefaa11ab38eb7a792c62ae6f33d95ab1ff46d68995316324d8c5287b0d9ce142d1cf15158e61f594e930260abb8155467af8bc25779960615'
+            '9a593bd269ab4da6bd64dddbce5729193456bc95ac55e8d65c170cc419f7099bf920d6a437fbcdd309bb365c4aae8603a49a716437398a8571b0e57913d9be1b'
             'SKIP'
-            'SKIP'
-            'SKIP')
+            'cf6fa2c19c624fe2d3eb76fc395a9870e2378e399433b95dd49583ad1f4f4650c02723bc108f5b37bfdad31296af8fa50783e73d1883d5146f3da1786aafd709')
 
 # Import key with:
 # curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | gpg --import -
@@ -67,7 +67,7 @@ package() {
     tar -xf data.tar.xz --no-same-owner -C "${pkgdir}"
 
     # Enable spotify to open URLs from the webapp
-    sed -i 's/^Exec=.*/Exec=spotify --uri=%U/' "${pkgdir}/usr/share/spotify/spotify.desktop"
+    sed -i 's/^Exec=.*/Exec=spotify %U/' "${pkgdir}/usr/share/spotify/spotify.desktop"
 
     install -Dm 644 "${pkgdir}/usr/share/spotify/spotify.desktop" "${pkgdir}/usr/share/applications/spotify.desktop"
     install -Dm 644 "${pkgdir}/usr/share/spotify/icons/spotify-linux-512.png" "${pkgdir}/usr/share/pixmaps/spotify-client.png"
