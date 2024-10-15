@@ -11,13 +11,13 @@
       "version": "20200725"
     },
     "google-chrome": {
-      "version": "129.0.6668.89"
+      "version": "129.0.6668.100"
     },
     "google-chrome-beta": {
-      "version": "130.0.6723.31"
+      "version": "130.0.6723.44"
     },
     "google-chrome-dev": {
-      "version": "131.0.6738.0"
+      "version": "131.0.6768.4"
     },
     "kopia": {
       "version": "0.17.0"
