@@ -1,6 +1,6 @@
 pkgbase = google-chrome-dev
 	pkgdesc = The popular web browser by Google (Dev Channel)
-	pkgver = 131.0.6768.4
+	pkgver = 131.0.6738.0
 	pkgrel = 1
 	url = https://www.google.com/chrome
 	install = google-chrome-dev.install
@@ -26,6 +26,6 @@ pkgbase = google-chrome-dev
 	source = google-chrome-unstable.sh
 	sha512sums = 3f92a15b4b99552b254620c29ed7c5f83b2b97f022472433a0af0f8d9cb5f87bd0a44169fe0a5e4a1884212851cd0e4dc984ad4117294679bc3f56f51d511fae
 	sha512sums = a225555c06b7c32f9f2657004558e3f996c981481dbb0d3cd79b1d59fa3f05d591af88399422d3ab29d9446c103e98d567aeafe061d9550817ab6e7eb0498396
-	sha512sums = 445eb36a588f49af018ded3d852b63e0523ffac20c25be721f3ef4663591256849432bebb3d9f352e4f53cbe1fb77fa67cf8911c9161f826490a21adbdcc81f4
+	sha512sums = a9b4a38a503afc895aa57ce9189a8f6a11874f9d83d04574d5bbe65296844b585fa2c0da58c27b262a12a74fcdd40ee7be09e25118ee5deddaddf9a48bf9fa14
 
 pkgname = google-chrome-dev
