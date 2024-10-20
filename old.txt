@@ -11,13 +11,13 @@
       "version": "20200725"
     },
     "google-chrome": {
-      "version": "129.0.6668.89"
+      "version": "130.0.6723.58"
     },
     "google-chrome-beta": {
-      "version": "130.0.6723.31"
+      "version": "131.0.6778.3"
     },
     "google-chrome-dev": {
-      "version": "131.0.6738.0"
+      "version": "132.0.6779.0"
     },
     "kopia": {
       "version": "0.17.0"
@@ -43,9 +43,9 @@
       "version": "1:1.2.47.364.gf06e5cee"
     },
     "teleport": {
-      "version": "16.4.2",
-      "gitref": "refs/tags/v16.4.2",
-      "url": "https://github.com/gravitational/teleport/releases/tag/v16.4.2"
+      "version": "16.4.3",
+      "gitref": "refs/tags/v16.4.3",
+      "url": "https://github.com/gravitational/teleport/releases/tag/v16.4.3"
     },
     "weechat-notify-send": {
       "version": "0.10"
