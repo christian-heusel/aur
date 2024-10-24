@@ -17,7 +17,7 @@
       "version": "131.0.6778.13"
     },
     "google-chrome-dev": {
-      "version": "132.0.6779.0"
+      "version": "132.0.6793.2"
     },
     "kopia": {
       "version": "0.17.0"
@@ -32,9 +32,9 @@
       "version": "0.1.4"
     },
     "pdfcpu": {
-      "version": "0.8.1",
-      "gitref": "refs/tags/v0.8.1",
-      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.8.1"
+      "version": "0.9.1",
+      "gitref": "refs/tags/v0.9.1",
+      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.9.1"
     },
     "prometheus-mosquitto-exporter": {
       "version": "v0.8.0"
