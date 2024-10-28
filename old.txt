@@ -11,13 +11,13 @@
       "version": "20200725"
     },
     "google-chrome": {
-      "version": "130.0.6723.58"
+      "version": "130.0.6723.69"
     },
     "google-chrome-beta": {
-      "version": "131.0.6778.3"
+      "version": "131.0.6778.13"
     },
     "google-chrome-dev": {
-      "version": "132.0.6779.0"
+      "version": "132.0.6793.2"
     },
     "kopia": {
       "version": "0.17.0"
@@ -32,20 +32,20 @@
       "version": "0.1.4"
     },
     "pdfcpu": {
-      "version": "0.8.1",
-      "gitref": "refs/tags/v0.8.1",
-      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.8.1"
+      "version": "0.9.1",
+      "gitref": "refs/tags/v0.9.1",
+      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.9.1"
     },
     "prometheus-mosquitto-exporter": {
       "version": "v0.8.0"
     },
     "spotify": {
-      "version": "1:1.2.47.364.gf06e5cee"
+      "version": "1:1.2.48.405.gf2c48e6f"
     },
     "teleport": {
-      "version": "16.4.3",
-      "gitref": "refs/tags/v16.4.3",
-      "url": "https://github.com/gravitational/teleport/releases/tag/v16.4.3"
+      "version": "16.4.6",
+      "gitref": "refs/tags/v16.4.6",
+      "url": "https://github.com/gravitational/teleport/releases/tag/v16.4.6"
     },
     "weechat-notify-send": {
       "version": "0.10"
