@@ -14,13 +14,16 @@
       "version": "131.0.6778.69"
     },
     "google-chrome-beta": {
-      "version": "131.0.6778.33"
+      "version": "132.0.6834.6"
     },
     "google-chrome-dev": {
-      "version": "132.0.6821.2"
+      "version": "133.0.6835.3"
     },
     "kopia": {
-      "version": "0.17.0"
+      "version": "0.18.1",
+      "gitref": "refs/tags/v0.18.1",
+      "revision": "c41fe4b9ca5936fc023c1b97f64dafa2903f75a2",
+      "url": "https://github.com/kopia/kopia/releases/tag/v0.18.1"
     },
     "mdt": {
       "version": "1.4.0"
@@ -40,12 +43,12 @@
       "version": "v0.8.0"
     },
     "spotify": {
-      "version": "1:1.2.48.405.gf2c48e6f"
+      "version": "1:1.2.50.335.g5e2860a8"
     },
     "teleport": {
-      "version": "16.4.7",
-      "gitref": "refs/tags/v16.4.7",
-      "url": "https://github.com/gravitational/teleport/releases/tag/v16.4.7"
+      "version": "17.0.1",
+      "gitref": "refs/tags/v17.0.1",
+      "url": "https://github.com/gravitational/teleport/releases/tag/v17.0.1"
     },
     "weechat-notify-send": {
       "version": "0.10"
