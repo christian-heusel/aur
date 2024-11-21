@@ -20,10 +20,10 @@
       "version": "133.0.6835.3"
     },
     "kopia": {
-      "version": "0.18.1",
-      "gitref": "refs/tags/v0.18.1",
-      "revision": "c41fe4b9ca5936fc023c1b97f64dafa2903f75a2",
-      "url": "https://github.com/kopia/kopia/releases/tag/v0.18.1"
+      "version": "0.18.2",
+      "gitref": "refs/tags/v0.18.2",
+      "revision": "fba7e28b9e56bf37f5d572b1961486ab847d7596",
+      "url": "https://github.com/kopia/kopia/releases/tag/v0.18.2"
     },
     "mdt": {
       "version": "1.4.0"
