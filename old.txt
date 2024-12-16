@@ -43,7 +43,7 @@
       "version": "v0.8.0"
     },
     "spotify": {
-      "version": "1:1.2.50.335.g5e2860a8"
+      "version": "1:1.2.52.442.g01893f92"
     },
     "teleport": {
       "version": "17.0.5",
