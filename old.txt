@@ -14,7 +14,7 @@
       "version": "131.0.6778.264"
     },
     "google-chrome-beta": {
-      "version": "132.0.6834.57"
+      "version": "132.0.6834.83"
     },
     "google-chrome-dev": {
       "version": "133.0.6905.0"
