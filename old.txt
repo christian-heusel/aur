@@ -46,9 +46,9 @@
       "version": "1:1.2.53.440.g7b2f582a"
     },
     "teleport": {
-      "version": "17.1.6",
-      "gitref": "refs/tags/v17.1.6",
-      "url": "https://github.com/gravitational/teleport/releases/tag/v17.1.6"
+      "version": "17.2.0",
+      "gitref": "refs/tags/v17.2.0",
+      "url": "https://github.com/gravitational/teleport/releases/tag/v17.2.0"
     },
     "weechat-notify-send": {
       "version": "0.10"
