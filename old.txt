@@ -17,13 +17,13 @@
       "version": "133.0.6943.27"
     },
     "google-chrome-dev": {
-      "version": "134.0.6958.2"
+      "version": "134.0.6974.3"
     },
     "kopia": {
-      "version": "0.18.2",
-      "gitref": "refs/tags/v0.18.2",
-      "revision": "fba7e28b9e56bf37f5d572b1961486ab847d7596",
-      "url": "https://github.com/kopia/kopia/releases/tag/v0.18.2"
+      "version": "0.19.0",
+      "gitref": "refs/tags/v0.19.0",
+      "revision": "5397142e0237b63d831dec042fe7f184cc73f84c",
+      "url": "https://github.com/kopia/kopia/releases/tag/v0.19.0"
     },
     "mdt": {
       "version": "1.4.0"
