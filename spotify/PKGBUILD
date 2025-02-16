@@ -6,9 +6,9 @@
 # Contributor: Eothred <yngve.levinsen@gmail.com>
 
 pkgname=spotify
-pkgver='1.2.50.335'
+pkgver='1.2.56.502'
 epoch=1
-_commit=g5e2860a8
+_commit=ga68d2d4f
 pkgrel=1
 pkgdesc='A proprietary music streaming service'
 arch=('x86_64')
@@ -34,7 +34,7 @@ source=("${pkgname}-${pkgver}-${_commit}-x86_64.deb::http://repository.spotify.c
         "${pkgname}-${pkgver}-${pkgrel}-Release::http://repository.spotify.com/dists/testing/Release"
         "${pkgname}-${pkgver}-${pkgrel}-Release.sig::http://repository.spotify.com/dists/testing/Release.gpg"
         "${pkgname}-${pkgver}-${pkgrel}-x86_64-Packages::http://repository.spotify.com/dists/testing/non-free/binary-amd64/Packages")
-sha512sums=('d7b7e0bdc845ecda4e99657de0a2eaf32850053e86163a5bf93e9727330838f7997d2afe297a908b380467d78860f69bce0040fca4411274a23cb2a4981cb014'
+sha512sums=('7ba67f879f63e4c8a746de313593f2f3b3f0081cd3b888ae306ab7da3dd133830a06465e65f85e80cc34d26ce7e7654e98be4cb26f0e93dd4ca3d0be4a159ab2'
             'da48b628a4ea925dd8521133ebf364b261b11aed252d264dde6605d915cdb631919ffe672c58534bcdb60869e5d87a49a60a8198780b99517123f0031e83fdb1'
             '999abe46766a4101e27477f5c9f69394a4bb5c097e2e048ec2c6cb93dfa1743eb436bde3768af6ba1b90eaac78ea8589d82e621f9cbe7d9ab3f41acee6e8ca20'
             '2e16f7c7b09e9ecefaa11ab38eb7a792c62ae6f33d95ab1ff46d68995316324d8c5287b0d9ce142d1cf15158e61f594e930260abb8155467af8bc25779960615'
@@ -43,9 +43,10 @@ sha512sums=('d7b7e0bdc845ecda4e99657de0a2eaf32850053e86163a5bf93e9727330838f7997
             'SKIP')
 
 # Import key with:
-# curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | gpg --import -
-validpgpkeys=('63CBEEC9006602088F9B19326224F9941A8AA6D1') # Spotify Public Repository Signing Key <tux@spotify.com>
+# curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
+validpgpkeys=('B420FD3777CCE3A7F0076B55C85668DF69375001') # Spotify Public Repository Signing Key <tux@spotify.com>
 # Old Keys:
+# 63CBEEC9006602088F9B19326224F9941A8AA6D1
 # E27409F51D1B66337F2D2F417A3A762FAFD4A51F
 # F9A211976ED662F00E59361E5E3C45D7B312C643
 # 8FD3D9A8D3800305A9FFF259D1742AD60D811D58
@@ -67,7 +68,7 @@ package() {
     tar -xzf data.tar.gz --no-same-owner -C "${pkgdir}"
 
     # Enable spotify to open URLs from the webapp
-    sed -i 's/^Exec=.*/Exec=spotify --uri=%U/' "${pkgdir}/usr/share/spotify/spotify.desktop"
+    sed -i 's/^Exec=.*/Exec=spotify --uri=%u/' "${pkgdir}/usr/share/spotify/spotify.desktop"
 
     install -Dm 644 "${pkgdir}/usr/share/spotify/spotify.desktop" "${pkgdir}/usr/share/applications/spotify.desktop"
     install -Dm 644 "${pkgdir}/usr/share/spotify/icons/spotify-linux-512.png" "${pkgdir}/usr/share/pixmaps/spotify-client.png"
