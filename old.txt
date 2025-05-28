@@ -14,7 +14,7 @@
       "version": "137.0.7151.55"
     },
     "google-chrome-beta": {
-      "version": "137.0.7151.40"
+      "version": "138.0.7204.4"
     },
     "google-chrome-dev": {
       "version": "138.0.7191.0"
@@ -35,9 +35,9 @@
       "version": "0.1.4"
     },
     "pdfcpu": {
-      "version": "0.10.2",
-      "gitref": "refs/tags/v0.10.2",
-      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.10.2"
+      "version": "0.11.0",
+      "gitref": "refs/tags/v0.11.0",
+      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.11.0"
     },
     "prometheus-mosquitto-exporter": {
       "version": "v0.8.0"
