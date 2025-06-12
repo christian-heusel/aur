@@ -17,7 +17,7 @@
       "version": "138.0.7204.23"
     },
     "google-chrome-dev": {
-      "version": "139.0.7219.3"
+      "version": "139.0.7232.3"
     },
     "kopia": {
       "version": "0.20.1",
