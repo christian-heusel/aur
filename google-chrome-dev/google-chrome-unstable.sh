@@ -11,7 +11,7 @@ CONFIG_FILE="${XDG_CONFIG_HOME}/chrome-unstable-flags.conf"
 if
 	test -f "${CONFIG_FILE}"
 then
-	mapfile -t CONFIG_LIST < "${CONFIG_FILE}"
+	mapfile -t -- CONFIG_LIST < "${CONFIG_FILE}"
 fi
 
 for CONFIG_LINE in "${CONFIG_LIST[@]}"
@@ -23,4 +23,4 @@ do
 	fi
 done
 
-exec /opt/google/chrome-unstable/google-chrome-unstable "${OPTION_LIST[@]}" "${@}"
+exec -- /opt/google/chrome-unstable/google-chrome-unstable "${OPTION_LIST[@]}" "${@}"
