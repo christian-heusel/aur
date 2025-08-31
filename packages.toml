@@ -56,11 +56,6 @@ source = "github"
 github = "basilioss/mdt"
 use_max_tag = true
 
-[molly-guard]
-source = "debianpkg"
-debianpkg = "molly-guard"
-strip_release = true
-
 [prometheus-mosquitto-exporter]
 source = "github"
 github = "sapcc/mosquitto-exporter"

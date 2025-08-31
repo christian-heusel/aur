@@ -29,7 +29,8 @@
       "version": "1.4.0"
     },
     "molly-guard": {
-      "version": "0.8.1"
+      "version": "0.8.5",
+      "url": "https://sources.debian.org/src/molly-guard/0.8.5/"
     },
     "pawxel": {
       "version": "0.1.4"
