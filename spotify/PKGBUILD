@@ -10,7 +10,7 @@ pkgver='1.2.74.477'
 
 epoch=1
 _commit=g3be53afe
-pkgrel=1
+pkgrel=2
 pkgdesc='A proprietary music streaming service'
 arch=('x86_64')
 license=('custom')
@@ -39,9 +39,9 @@ sha512sums=('c002c778dd98d3c9425de921a69c630bbab8f6fd5a4b2edd1ac04d76f10a57c92f2
             'da48b628a4ea925dd8521133ebf364b261b11aed252d264dde6605d915cdb631919ffe672c58534bcdb60869e5d87a49a60a8198780b99517123f0031e83fdb1'
             '999abe46766a4101e27477f5c9f69394a4bb5c097e2e048ec2c6cb93dfa1743eb436bde3768af6ba1b90eaac78ea8589d82e621f9cbe7d9ab3f41acee6e8ca20'
             '2e16f7c7b09e9ecefaa11ab38eb7a792c62ae6f33d95ab1ff46d68995316324d8c5287b0d9ce142d1cf15158e61f594e930260abb8155467af8bc25779960615'
-            '84e41bc55d3a7ef83c1071c10f2d46cd6b4b01ee55f2e99753807e1d6975caf0ed3972a1004f2a4cc7aaaf3842cc9c920eed48208c2dcce3abc116ec50684bb7'
             'SKIP'
-            '21d9a7ecea277ee38a736488f85b30f7dcf846fff154129fb3d7195a77bff1e71a068f56bf60733a308dc005774f2f3953a46738e08798f7cef53ad93580c278')
+            'SKIP'
+            'SKIP')
 
 # Import key with:
 # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
