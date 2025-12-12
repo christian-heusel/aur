@@ -23,4 +23,4 @@ do
 	fi
 done
 
-exec -- /opt/google/chrome-beta/google-chrome-beta "${OPTION_LIST[@]}" "${@}"
+exec /opt/google/chrome-beta/google-chrome-beta "${OPTION_LIST[@]}" "${@}"

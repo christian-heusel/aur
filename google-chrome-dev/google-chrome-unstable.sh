@@ -23,4 +23,4 @@ do
 	fi
 done
 
-exec -- /opt/google/chrome-unstable/google-chrome-unstable "${OPTION_LIST[@]}" "${@}"
+exec /opt/google/chrome-unstable/google-chrome-unstable "${OPTION_LIST[@]}" "${@}"
