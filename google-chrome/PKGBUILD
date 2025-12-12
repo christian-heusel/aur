@@ -37,7 +37,7 @@ source=("https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-${_cha
 	"google-chrome-$_channel.sh")
 sha512sums=('a77f69bd52fff52bdcd151dc9da8a7a8acd1831e0ff7824683ac1663b3a19281cd00dfc99c1f4c01ec8b7cab36c533a8344a6fe9bc89384fb6c34d25b92b9274'
             'a225555c06b7c32f9f2657004558e3f996c981481dbb0d3cd79b1d59fa3f05d591af88399422d3ab29d9446c103e98d567aeafe061d9550817ab6e7eb0498396'
-            'dd69f95587e2a1e7dab4bccb2518ba450425e308edded29c7e2ab64258480babeb8ffc9f2afc252fb1fbb636801cd8fb91a5010083e2c194047ef9d5176fb9d7')
+            'a69549eb2aed2e0cae373e6ab26e797aa1f0d329e47c526a51903e0934e10a88282c5b041eeca001e82d1d642da2a01c4de01ed944d83dcf3db6ee1a7dab8eb0')
 
 package() {
 	bsdtar -xf data.tar.xz -C "$pkgdir/"
