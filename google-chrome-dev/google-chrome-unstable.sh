@@ -1,11 +1,26 @@
 #!/bin/bash
 
-XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-~/.config}
-
-# Allow users to override command-line options
-if [[ -f $XDG_CONFIG_HOME/chrome-dev-flags.conf ]]; then
-    CHROME_USER_FLAGS="$(grep -v '^#' $XDG_CONFIG_HOME/chrome-dev-flags.conf)"
+if
+	test -z "${XDG_CONFIG_HOME}"
+then
+	XDG_CONFIG_HOME="${HOME}/.config"
 fi
 
-# Launch
-exec /opt/google/chrome-unstable/google-chrome-unstable $CHROME_USER_FLAGS "$@"
+CONFIG_FILE="${XDG_CONFIG_HOME}/chrome-unstable-flags.conf"
+
+if
+	test -f "${CONFIG_FILE}"
+then
+	mapfile -t -- CONFIG_LIST < "${CONFIG_FILE}"
+fi
+
+for CONFIG_LINE in "${CONFIG_LIST[@]}"
+do
+	if
+		! [[ "${CONFIG_LINE}" =~ ^[[:space:]]*('#'|$) ]]
+	then
+		OPTION_LIST+=("${CONFIG_LINE}")
+	fi
+done
+
+exec /opt/google/chrome-unstable/google-chrome-unstable "${OPTION_LIST[@]}" "${@}"
