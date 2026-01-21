@@ -59,9 +59,10 @@ package() {
 
 	# Fix the Chrome desktop entry
 	sed -i \
-		-e "/Exec=/i\StartupWMClass=Google-chrome-$_channel" \
-		-e "s/x-scheme-handler\/ftp;\?//g" \
-		"$pkgdir"/usr/share/applications/google-chrome-$_channel.desktop
+		-e "/Exec=/i\StartupWMClass=google-chrome-$_channel" \
+		-e "/# This is the same as google-chrome-unstable.desktop/,+4d" \
+		"$pkgdir"/usr/share/applications/com.google.Chrome.$_channel.desktop
+	rm "$pkgdir"/usr/share/applications/google-chrome-$_channel.desktop
 
 	# Remove the Debian Cron job, duplicate product logos and menu directory
 	rm -r \
