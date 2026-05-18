@@ -34,16 +34,21 @@ install=$pkgname.install
 _channel=stable
 source=("https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-${_channel}/google-chrome-${_channel}_${pkgver}-1_amd64.deb"
 	'eula_text.html'
-	"google-chrome-$_channel.sh")
+	"google-chrome-$_channel.sh"
+	'fix_chrome_pwa_flags.sh')
 sha512sums=('d84abda401d55783043a8b2702a15e10f20828211617e20590d61987054540066951fd7439296adecd5e1cd9dac462f10e06fbb138403cec72d991a9721673f3'
             'a225555c06b7c32f9f2657004558e3f996c981481dbb0d3cd79b1d59fa3f05d591af88399422d3ab29d9446c103e98d567aeafe061d9550817ab6e7eb0498396'
-            'de02b498a4b5b93e21622c8dba57befe795d733a04656be911cc38e28bfef0e20470450f44be523bbde8d4de28f79c10434846ca01fc2a2f4e67707b79332f94')
+            'de02b498a4b5b93e21622c8dba57befe795d733a04656be911cc38e28bfef0e20470450f44be523bbde8d4de28f79c10434846ca01fc2a2f4e67707b79332f94'
+            '7dbb1c74629607d159dbefbcad56236a152fe2d1f3d4b96bfd046d322fb695c169632b332c5a69ef9cbf6065ba51388d0d381d2a8cbf00b5d775fd6cc00a5100')
 
 package() {
 	bsdtar -xf data.tar.xz -C "$pkgdir/"
 
 	# Launcher
 	install -m755 google-chrome-$_channel.sh "$pkgdir"/usr/bin/google-chrome-$_channel
+
+	# GPU performance patch for user-space PWAs
+	install -m755 fix_chrome_pwa_flags.sh "$pkgdir"/usr/bin/fix-chrome-pwa-flags
 
 	# Icons
 	for i in 16x16 24x24 32x32 48x48 64x64 128x128 256x256; do
@@ -68,3 +73,4 @@ package() {
 		"$pkgdir"/opt/google/chrome/cron/ \
 		"$pkgdir"/opt/google/chrome/product_logo_*.png
 }
+
