@@ -11,7 +11,7 @@
       "version": "20200725"
     },
     "google-chrome": {
-      "version": "148.0.7778.215"
+      "version": "149.0.7827.53"
     },
     "google-chrome-beta": {
       "version": "149.0.7827.53"
