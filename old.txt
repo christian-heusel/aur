@@ -11,7 +11,7 @@
       "version": "20200725"
     },
     "google-chrome": {
-      "version": "155.0.8059.84"
+      "version": "156.0.8078.47"
     },
     "google-chrome-beta": {
       "version": "157.0.8103.6"
@@ -36,10 +36,10 @@
       "version": "0.1.4"
     },
     "pdfcpu": {
-      "version": "0.16.0",
-      "gitref": "refs/tags/v0.16.0",
-      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.16.0",
-      "creation_time": "2026-09-28T21:31:25Z"
+      "version": "0.16.2",
+      "gitref": "refs/tags/v0.16.2",
+      "url": "https://github.com/pdfcpu/pdfcpu/releases/tag/v0.16.2",
+      "creation_time": "2026-10-11T21:23:02Z"
     },
     "prometheus-mosquitto-exporter": {
       "version": "v0.8.0"
