@@ -15,11 +15,6 @@ github = "KRTirtho/flemozi"
 prefix = "v"
 use_max_tag = true
 
-[fswebcam]
-source = "github"
-github = "fsphil/fswebcam"
-use_max_tag = true
-
 [google-chrome]
 source = "apt"
 mirror = "https://dl.google.com/linux/chrome/deb/"
